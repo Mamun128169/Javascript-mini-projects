@@ -1,0 +1,192 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    background: #c2f3f8d2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.product {
+    width: 90%;
+    max-width: 750px;
+    display: flex;
+}
+
+.gallery {
+    flex-basis: 47%;
+    background-color: #242020;
+    transform: scale(1.08);
+    box-shadow: -10px 5px 10px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    position: relative;
+}
+
+.gallery img {
+    width: 100%;
+    display: block;
+    padding-top: 100px;
+}
+
+.details {
+    flex-basis: 53%;
+    background: #fff;
+    padding: 40px;
+    padding-left: 60px;
+    box-shadow: -10px 5px 10px 10px rgba(0, 0, 0, 0.1);
+    font-size: 15px;
+    color: #555;
+    font-weight: 500;
+    border-radius: 4px;
+}
+
+.details h1 {
+    color: #333;
+    font-size: 35px;
+}
+
+.details h2 {
+    color: #555;
+    font-size: 30px;
+    margin: 15px 0;
+    font-weight: 600;
+}
+
+.details h3 {
+    color: rgb(8, 144, 8);
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.details form {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.size-select {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.size-select p {
+    width: 70px;
+}
+
+.size-select input:checked + span {
+    color: blue;
+    font-weight: 600;
+}
+
+.size-select input {
+    display: none;
+}
+
+.size-select span {
+    padding: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.color-select {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.color-select p {
+    width: 75px;
+}
+
+.color-select span {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.color-1 {
+    background: red;
+}
+.color-2 {
+    background: #0db466;
+}
+.color-3 {
+    background: rgb(10, 92, 246);
+}
+.color-4 {
+    background: orchid;
+}
+
+.color-select input {
+    display: none;
+}
+
+.color-select input:checked + span {
+    transform: scale(0.7);
+    box-shadow: 0 0 0 4px #fff, 0 0 0 6px #221d1d;
+}
+
+.quantity-select {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.quantity-select p {
+    width: 75px;
+}
+
+.quantity-select input {
+    background: #eee;
+    width: 50px;
+    border: 0;
+    outline: 0;
+    padding: 5px 2px 5px 15px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+form button {
+    background: #553ff0;
+    color: #fff;
+    font-size: 17px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    margin-top: 50px;
+    box-shadow: 0 10px 10px rgba(85, 63, 240, 0.25);
+    cursor: pointer;
+}
+
+.controls {
+    position: absolute;
+    bottom: 40px;
+    right: 20px;
+}
+
+.btn {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 10px;
+    cursor: pointer;
+}
+
+.active {
+    background: #5e4af8;
+}
